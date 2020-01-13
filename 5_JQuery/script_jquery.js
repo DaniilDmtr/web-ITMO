@@ -1,14 +1,12 @@
 $(".first_task").css("fontWeight", "bold");
-$(".first_task").css("color", "#112233");
-$(".first_task").css("fontSize", "15px");
+$(".second_task").css("color", "red");
+$(".third_task").css("fontSize", "25px");
 $(document).ready(function(){
 	$("input").attr("disabled", "disabled");
 });
 $("a").prepend("↗");
 $("a").attr("target", "_blank");
 
-//$.ajax("https://inxaoc.github.io/example/ajax-1.html");
-//$("#ajax").load("https://inxaoc.github.io/example/ajax-1.html");
 
 function reloadPage() {
 	let p = document.createElement("p");
@@ -31,7 +29,7 @@ function fadeToggle(i) {
 }
 
 function animateFont(i) {
-	$(".prgInTable").eq(i).animate({fontSize: "20px"});
+	$(".prgInTable").eq(i).animate({fontSize: "25px"});
 	$(".prgInTable").eq(i).animate({fontSize: "15px"});
 }
 
@@ -44,26 +42,4 @@ function opacityAnimation(i) {
 	$(".prgInTable").eq(i).animate({opacity: "1"}, 1000);
 }
 
-function getJSON(){
-	$.getJSON("https://inxaoc.github.io/example/ajax.json", function(data) {
-		let ulMain = document.createElement("ul");
-		function jsonToList(obj,curUl) {
-			for (let key in obj) {
-				let li = document.createElement("li");
-				let item = key + " : ";
-				li.innerHTML = item;
-				curUl.appendChild(li);
-				if (typeof obj[key] == "object" && !Array.isArray(obj[key])) {
-					let ul = document.createElement("ul");
-					jsonToList(obj[key],ul);
-					curUl.appendChild(ul);
-				} else {
-					item += obj[key];
-					li.innerHTML = item;
-				}
-			}
-		}
-		jsonToList(data, ulMain);
-		document.body.appendChild(ulMain);
-	});
-}
+
