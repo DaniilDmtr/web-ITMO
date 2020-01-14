@@ -125,7 +125,6 @@ function createTable(functionBlock) {
 		document.getElementById("MainForm").hidden = false;
 	}
 	createTable.deleteTable = deleteTable;
-
 	tableWidth = document.getElementById("width").value;
 	tableHeight = document.getElementById("height").value;
 	document.getElementById("MainForm").hidden = true;
