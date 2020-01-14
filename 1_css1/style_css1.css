@@ -9,15 +9,11 @@ h3{padding:0; margin:0;}
 .byline {
 	color: silver;
 	text-align: left;
-	padding-bottom: 0px;
 	vertical-align: top;
 	text-transform: uppercase;
-	/*align: center;*/
 }
 .content {
 	padding: 5%;
-	/*background: rgb(30,36,52);
-	background: linear-gradient(135deg, rgba(30,36,52,1) 0%, rgba(59,78,108,1) 100%);*/
 }
 body {
 	background: rgb(30,36,52);
