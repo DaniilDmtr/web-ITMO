@@ -14,8 +14,8 @@ function reloadPage() {
 	document.body.appendChild(p);
 }
 
-$("table").css("border", "3px solid lightgreen");
-$("td").css("border", "2px dashed lightgreen");
+
+$("td").css("border", "3px solid  orange");
 $(".btnInTable").css("width", "100%")
 $(".prgInTable").css("fontWeight", "bold");
 $(".prgInTable").css("fontSize", "15px");
