@@ -1,4 +1,4 @@
-let string = "Когда-нибудь это закончится";
+let string = "Фраза для теста";
 document.write(string, "</br>");
 document.write("Количество слов = ", string.split(" ").length, "</br>");
 document.write("Количество букв = ", string.length - string.split(" ").length + 1, "</br>");
@@ -39,21 +39,11 @@ for (i = 0; i < images.length; i++) {
 }
 document.write("imagesHeightAdd = ", imagesHeightAdd, "</br>");
 forms = document.getElementsByTagName("form");
-document.write("Even forms = ");
-for (i = 0; i < forms.length; i++) {
-	if (((i + 1) % 2) == 0) {
-		document.write(forms[i].getAttribute('name'), ", ");
-	}
-}
 function onClickButton(j) {
-	for (i = 0; i < forms[j].childNodes.length; i++) {
-		if ((forms[j].childNodes[i].tagName == "BUTTON") && (forms[j].childNodes[i].innerHTML == "Show the form name")) {
-			alert(forms[j].childNodes[i].innerHTML);
-			break;
-		}
-	}
+	alert (forms[j].getAttribute('id'));
 	return false;
 }
+
 function formID (j) {
 	alert (forms[j].getAttribute('id'));
 	return false;
@@ -71,53 +61,4 @@ function quantityInputs(j) {
 	alert (qInputs);
 	return false;
 }
-function tableCreate() {
-	//let body = document.getElementsByTagName("body")[0];
-	let tbl = document.createElement("table");
-  	tbl.border = 1;
-	//let tbdy = document.createElement("tbody");
-	let lastLinks = [];
-	for (i = 0; i < links.length; i++) {
-		if (links[i].getAttribute('class') == "LastTask") {
-			lastLinks.push(links[i]);
-		}
-	}
-	let set = new Set();
-	for (i = 0; i < lastLinks.length; i++) {
-		set.add(lastLinks[i].innerHTML);
-	}
-	for (let item of set) {
-		let tr = tbl.insertRow(item.number);
-		for (j = 0; j < 3; j++) {
-			let td = tr.insertCell(j);
-			switch(j) {
-				case 0:
-				td.innerHTML = String(item);
-				break;
-				case 1:
-				td.innerHTML = quantity(1, item, lastLinks);
-				break;
-				case 2:
-				td.innerHTML = quantity(2, item, lastLinks);
-				break;
-			}
-		}
-	}
-	document.body.appendChild(tbl);
-}
-function quantity(number, item, lastLinks) {
-	let arr = [];
-	let count = 0;
-	for (i = 0; i < lastLinks.length; i++) {
-		if (lastLinks[i].innerHTML == item) {
-			count++;
-			arr.push(lastLinks[i].getAttribute('href'));
-		}
-	}
-	if (number == 1) {
-		return count;
-	} else {
-		return arr;
-	}
 
-}
