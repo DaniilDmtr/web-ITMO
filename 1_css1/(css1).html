@@ -1,30 +1,63 @@
-<!DOCTYPE html>
-<html>
+h3{padding:0; margin:0;}
 
-<head>
-  <title>The Rise of Soccer in The US</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel='stylesheet' href='style_css1.css'/>
-</head>
+.writer-img {
+	float: left;
+	height: 35px;
+	width: 35px;
+	margin-right: 10px;
+}
+.byline {
+	color: silver;
+	text-align: left;
+	vertical-align: top;
+	text-transform: uppercase;
+}
+.content {
+	padding: 5%;
+}
+body {
+	background: rgb(30,36,52);
+	background: linear-gradient(135deg, rgba(30,36,52,1) 0%, rgba(59,78,108,1) 100%);
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	padding:0;
+	margin:0;
+}
 
-<body>
+h1 {
+	color: white;
+	margin-top: 100px;
+	text-align: center;
+}
+h2 {
+	color: silver;
+}
+p {
+	color: white;
+}
 
-  <div class="content">
-    <img src="images/htmlcss1-img_writer-avatar.jpg" class="writer-img">
-    <h3 class="byline">Article By: Jane Dover</h3>
-    <h1>How the Rise of Soccer in the US Is Changing the Face of Youth Sports</h1>
-    <h2>The focus on soccer in youth sports programs is exploding nation-wide</h2>
-    <p>When the first World Cup arrived in the US in the 90's everyone officially declared that soccer was it. Well it's taken it's time but we can definitely see the influence of soccer, especially women's soccer, across the US. This year, 3 million kids
-      played in youth soccer leagues with 2/3 of those leagues for girls. In fact, in the 12-17 age range the MLS has surpassed the MLB and NFL in popularity.</p>
-    <p>Part of this meteoric rise can be attributed to the impressively soaring ad dollars being pumped into the Women's World Cup games in 2014. The women's games generated $40 million for Fox, that's definitely not chump change. And those advertisers,
-      like ATT, Coca Cola, Verizon, Nike, Visa, and other heavy hitters, are working to make sure they see those numbers grow year after year by investing in youth soccer facilities and promoting programs across the country. </p>
-    <p>Now that big business is involved you can be assured you'll see a continued rise in popularity in soccer across the country for years to come. </p>
-  </div>
+.image{
+	padding: 0;
+	margin: 0;
+	width:100%;
+	height:350px;
+	background: url(images/soccer.jpeg) 100% 100% no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
 
-  <div class="image">
-    <p class="caption">The local semi- pro soccer team in Seattle, WA plays an international friendly</p>
-  </div>
-
-</body>
-
-</html>
+.caption{
+	width: 60%;
+	height: auto;
+	padding: 10px;
+	margin-left: 3%;
+	text-align: left;
+	background-color: rgba(255, 255, 255, 0.7);
+	color: black;
+	font-style: italic;
+	vertical-align: top;
+	position: absolute;
+   	bottom: 0;
+   	left: 0;
+}
