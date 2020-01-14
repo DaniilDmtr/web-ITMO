@@ -1,7 +1,7 @@
 body{
-  background-image: url(images/big-ben.jpg);
-  background-repeat: round;
-  background-size: auto 100%;
+  background-image: url(images/leo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .updown{
   width: 100%;
@@ -17,29 +17,23 @@ body{
   position: relative;
 }
 .blocks{
-  text-shadow: 1px 1px 3px white ;
-  width: 50%;
+  width: 60%;
   height: 180px;
-  background-image: url(images/book-2.jpg);
-  background-size: auto 200px;
-  background-repeat: round;
-  background-color: #b5e61e;
+  background-color: orange;
 }
 #block1{
   position: absolute;
-  top: 20%;
-  left: 12.5%;
+  top: 50%;
+  left: 40%;
 }
 #block2{
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 65%;
+  left: 12,5%;
 }
 #content{
-  background-image: url(images/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  width: 50%;
+  color:white;
+  width: 60%;
   height: 750px;
   margin: 0 auto;
   text-align: justify;
